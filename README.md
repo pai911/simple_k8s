@@ -11,6 +11,10 @@ A pod with an image from Docker Hub
 A NodePort service that config the external port for local computer 
 - client-node-port.yaml
 
+You can expect to see the following error message if you change the containerPort in the Pod config file.
+
+> The Pod "client-pod" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+
 ## Production Config
 We then use deployment to provides declarative updates for Pods
 ### Deployment
