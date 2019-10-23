@@ -1,5 +1,6 @@
 # simple_k8s
-A simple k8s configuration that uses Pod and Service/NodePort
+- A simple k8s configuration that uses Pod and Service/NodePort
+- Single container/pod 
 
 ## Initial Config
 This demonstrate that only a limited set of fields can be updated in a Pod config
